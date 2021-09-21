@@ -4,6 +4,8 @@ from rdkit.Chem.Descriptors import *
 from rdkit.Chem import *
 from rdkit import RDLogger    
 from rdkit.Chem.Crippen import MolLogP,MolMR
+RDLogger.DisableLog('rdApp.*')    
+
 import seaborn as sns
 import pickle as pkl
 import random
@@ -19,8 +21,7 @@ from sklearn.model_selection import KFold
 from sklearn.preprocessing import StandardScaler
 import collections
 import matplotlib.pyplot as plt
-
-RDLogger.DisableLog('rdApp.*')         
+     
 sns.set_style('ticks')
 sns.set_style('white')
 
@@ -267,7 +268,6 @@ def pfa_descriptor(data_SD,train_idx,test_idx,desired_var=0.90):
     pfa_test=test_SD[feats_idx]
     
     return pd.concat([pfa_train,pfa_test])
-
 
 
 # Get descriptors that are minimally correlated based on a PCC cutoff value
