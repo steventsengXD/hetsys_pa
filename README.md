@@ -2,7 +2,7 @@
 
 Required Python packages:
 1. numpy
-2. sklearn
+2. scikit-learn
 3. seaborn
 4. pandas
 5. matplotlib
