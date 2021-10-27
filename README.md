@@ -1,4 +1,4 @@
-# HetSys Peer Assessment
+# HetSys Peer-to-peer UQ Assessment
 
 Required Python packages:
 1. numpy
